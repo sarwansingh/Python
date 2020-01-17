@@ -1,0 +1,5 @@
+- monthwise- yearwise data usage 
+- yearwise - operatorwise call duration 
+- yearwise - % of call duration and data usuage
+- Maximum data usuage , hourly / call
+- 

@@ -1,0 +1,9 @@
+
+What all are the products, that have been purchased the most?
+Which product category has been sold the maximum?
+Men or Women, who are likely to spend more in Black Friday Sales?
+Married or Individuals, who spends more?
+Which age group has more interest in these type of sales?
+which item is mostly bought by men/women ?
+which age group of men/women is mostly interested in Friday Sales?
+

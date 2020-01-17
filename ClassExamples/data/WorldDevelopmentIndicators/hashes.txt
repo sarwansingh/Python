@@ -1,0 +1,19 @@
+Current git commit:
+7835bc709f7deb9f3a20ed948b8e97b5349fac60
+
+Current input/ouput md5 hashes:
+MD5 (output/Country.csv) = a1599359a698cfbb6d06e351e7a4af98
+MD5 (output/CountryNotes.csv) = 37844492a079f39a744ece205e69a16a
+MD5 (output/Footnotes.csv) = 801f97414073b13d50d1a614a44e1c52
+MD5 (output/Indicators.csv) = 3c8e84290727077b2ba4665d4081b913
+MD5 (output/Series.csv) = fe37c2c941fd6fd1123965f1223dd969
+MD5 (output/SeriesNotes.csv) = 393c7d130f77f404740385384d12a33e
+MD5 (output/database.sqlite) = f2e8820cceed5273f9059e5a06c26acc
+MD5 (input/WDI.zip) = b1236f10c4d59d0ddbf8221e2adadeb3
+MD5 (input/WDI_CS_Notes.csv) = 54cc13dbe105ae9a2cf8d43b85112aae
+MD5 (input/WDI_Country.csv) = 4f49643ce3e5fcbf016b00cddf88ccc3
+MD5 (input/WDI_Data.csv) = f23edd3270362bb5cfd1b8aaac14b4e0
+MD5 (input/WDI_Description.csv) = 45cbe02d0134e5d9ce253b248affc5d6
+MD5 (input/WDI_Footnotes.csv) = b666d33957bb7a59c7bd1f7c19f6abbf
+MD5 (input/WDI_ST_Notes.csv) = 5564ba89351acad28621a03cfc6f49b8
+MD5 (input/WDI_Series.csv) = 7f1045833a0005485e41994d6dcad2e8
