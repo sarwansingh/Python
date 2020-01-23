@@ -1,0 +1,7 @@
+on the anaconda prompt 
+install pyinstaller 
+then make make_exe.py file and give the following command
+pyinstaller.exe --onefile make_exe.py (go to the folder where you want to make the file, in this eg makeEXEinPython folder)
+this will create a build and dist folder in the command path
+the dist folder will contain the target .exe file 
+save the site.txt or any another txt file used in the .py file in dist folder 

@@ -1,0 +1,4 @@
+Customer_Number,Customer_Name,2016,2017,Percent_Growth,Jan_Units,Month,Day,Year,Active
+10001,"Quest Industries","$125,000.00","$162500.00",30.00%,500,1,10,2015,Y
+10002,"kara Industries","$125,000.00","$162500.00",60.00%,500,1,10,2015,Y
+10003,"Dabu Industries","$154,000.00","$642500.00",50.00%,closed,1,10,2015,N
