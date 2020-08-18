@@ -17,4 +17,16 @@ The examples undertaken/coded while demos in class are [available here](./ClassE
 
 > Contents/Slides:  &nbsp;&nbsp;&nbsp;  [Topicwise Slides](./Slides)
 
+> Dataset used in examples :  &nbsp;&nbsp;&nbsp;  [Dataset](./ClassExamples/data)
+
+> Additional Resources/books :  &nbsp;&nbsp;&nbsp;  [Dataset](./pdfs)
+
+> Weblinks : 
+- [Python Numpy Tutorial](https://cs231n.github.io/python-numpy-tutorial/)
+- [Dive into Deep Learning] (http://d2l.ai/chapter_introduction/index.html)
+- [Deep Learning-MIT Press] (http://www.deeplearningbook.org/)
+
+
+
+
 
