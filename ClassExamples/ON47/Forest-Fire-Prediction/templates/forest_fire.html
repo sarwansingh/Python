@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<body>
+   <h1>Forest Fire Prediction</h1>
+	<h5 >Predict the probability of Forest-Fire Occurence </h5>
+              
+    <form action='/predict' method="post" class="col s12">
+      <table>
+	  <tr><td>
+	  <b>Temperature</b>
+            <td> 	
+          <input  name="Temperature"    >
+        </tr>
+        <tr><td>
+			<b>Oxygen</b>
+            <td>  
+            <input  name="Oxygen" > 
+		</tr>
+        <tr><td>
+			<b>Humidity</b>
+            <td>  
+			<input  name="Humidity" placeholder="Humidity %"  >
+
+        </tr>
+		</table>
+          <button type="submit"  >Predict Probability</button>
+      </div>
+    </form>
+       
+
+      <br> {{pred}}<br>
+
+    
+
+  </body>
+</html>
+
