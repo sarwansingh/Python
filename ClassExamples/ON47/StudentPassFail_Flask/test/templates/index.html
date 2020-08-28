@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Student Result Prediction </title>
+</head> 
+<body>
+	 
+   <h2>Result Prediction</h2>
+	<h3>Predict the probability of Student Result(Pass/Fail) </h3>
+            
+    <form action='/predict' method="post">
+      <table>
+		<tr><td> Daily Self Study
+			<td>  <input  name="self_study"  placeholder="Daily Self Study (in hrs) " >
+        </tr>
+        <tr><td> Monthly time spent on Tutorials
+            <td>  <input  name="tutorials_montly" placeholder="Time on Tutorials (in hrs)" > 
+		</tr>
+        <tr>
+		<td colspan=2 align=center><br><button type="submit">Predict Probability</button>
+		</tr>
+	  </table>
+    </form>
+       
+     <br> {{pred}}<br>  
+
+  </body>
+</html>
+
