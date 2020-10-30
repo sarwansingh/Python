@@ -1,0 +1,16 @@
+Practicals for week (17-24)
+Demonstrate all the example discussed in class to Ravi/Jaspreet
+
+1. LED-Button { do excercise 1 } 
+2. Led-PWM,Buzzer
+3. Analog read and write - LDR, MQ135/MQ2 sensor, PIR
+4. Seven segment
+5. LCD
+6. Keypad, LCD-Keypad integration. 
+7. small project - Security system using LCD,Keypad, Buzzer.
+
+Note: Ravi/Jaspreet
+*dont share any code to students. 
+*Just help them to understand how hardware-software work
+
+ 

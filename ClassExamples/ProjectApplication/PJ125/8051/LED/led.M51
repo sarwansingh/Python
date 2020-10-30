@@ -1,0 +1,97 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        01/28/2020  09:50:53  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE button.obj TO led
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  button.obj (BUTTON)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  led (BUTTON)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0026H     UNIT         ?PR?_MYDELAY?BUTTON
+            CODE    0826H     001AH     UNIT         ?PR?MAIN?BUTTON
+            CODE    0840H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   led (BUTTON)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?BUTTON
+
+?PR?MAIN?BUTTON
+  +--> ?PR?_MYDELAY?BUTTON
+
+
+
+SYMBOL TABLE OF MODULE:  led (BUTTON)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        BUTTON
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  C:0826H         PUBLIC        main
+  B:00A0H.0       PUBLIC        button1
+  C:0800H         PUBLIC        _mydelay
+  -------         PROC          _MYDELAY
+BL51 BANKED LINKER/LOCATER V6.05                                                      01/28/2020  09:50:53  PAGE 2
+
+
+  D:0006H         SYMBOL        t
+  -------         DO            
+  D:0004H         SYMBOL        x
+  D:0002H         SYMBOL        y
+  -------         ENDDO         
+  C:0800H         LINE#         4
+  C:0800H         LINE#         5
+  C:0803H         LINE#         6
+  C:0810H         LINE#         7
+  C:081EH         LINE#         8
+  C:0825H         LINE#         9
+  -------         ENDPROC       _MYDELAY
+  -------         PROC          MAIN
+  C:0826H         LINE#         10
+  C:0826H         LINE#         11
+  C:0826H         LINE#         12
+  C:0829H         LINE#         13
+  C:082CH         LINE#         14
+  C:0833H         LINE#         15
+  C:0836H         LINE#         16
+  C:0839H         LINE#         17
+  C:083BH         LINE#         18
+  C:083EH         LINE#         19
+  C:083EH         LINE#         20
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        BUTTON
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0040H BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=79
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

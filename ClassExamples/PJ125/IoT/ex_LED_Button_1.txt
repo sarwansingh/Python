@@ -1,0 +1,12 @@
+BUTTONS 7,8,12,13
+LEDs 10,6,9,11
+
+Q1. use each button to toggle respective LEDs
+
+Q2. use button 7 to increment the LED display and button at 8 to decrement the display of LEDs
+
+Q3. use each button (four)  to have differet patterns(using all LEDs)  
+
+q4 .  use single button to change five LED pattern . [ sixth time button is pressed all LEDs off]
+
+

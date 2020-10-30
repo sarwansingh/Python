@@ -1,0 +1,45 @@
+C51 COMPILER V8.08   P1                                                                    01/29/2020 10:11:53 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE P1
+OBJECT MODULE PLACED IN p1.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE p1.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1           #include<reg51.h>
+   2          sbit but1 = P2^0;
+   3          void my_delay()
+   4          {       int i,j;
+   5   1       
+   6   1              for (j=0;j<3 ;j++){
+   7   2                      for (i=0 ; i<30000 ;i++){
+   8   3                      }
+   9   2              }
+  10   1      }       
+  11          void main()
+  12          {
+  13   1              while(1){
+  14   2               // if(P2 == 0xfe ){ //1111 1110  // not the correct way
+  15   2               if (but1==0){
+  16   3                // if button on P2.0 pin is pressed display pattern
+  17   3                      P1=0xf0; my_delay();
+  18   3                      P1=0x0f; my_delay();
+  19   3                }
+  20   2                else { P1=0x00; } // make all LEDs off 
+  21   2              }
+  22   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     51    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

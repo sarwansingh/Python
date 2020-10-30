@@ -1,0 +1,104 @@
+BL51 BANKED LINKER/LOCATER V6.05                                                        01/29/2020  11:30:49  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.05, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE buttonLEDpattern_v2.obj TO ledbutton
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  buttonLEDpattern_v2.obj (BUTTONLEDPATTERN_V2)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  ledbutton (BUTTONLEDPATTERN_V2)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?BUTTONLEDPATTERN_V2
+            IDATA   000AH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0036H     UNIT         ?PR?MAIN?BUTTONLEDPATTERN_V2
+            CODE    08C2H     001DH     UNIT         ?PR?MY_DELAY?BUTTONLEDPATTERN_V2
+            CODE    08DFH     0005H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   ledbutton (BUTTONLEDPATTERN_V2)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?BUTTONLEDPATTERN_V2
+  +--> ?C_INITSEG
+
+?PR?MAIN?BUTTONLEDPATTERN_V2
+  +--> ?PR?MY_DELAY?BUTTONLEDPATTERN_V2
+
+
+
+SYMBOL TABLE OF MODULE:  ledbutton (BUTTONLEDPATTERN_V2)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        BUTTONLEDPATTERN_V2
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+BL51 BANKED LINKER/LOCATER V6.05                                                      01/29/2020  11:30:49  PAGE 2
+
+
+  C:088CH         PUBLIC        main
+  D:0008H         PUBLIC        but1press
+  C:08C2H         PUBLIC        my_delay
+  B:00A0H.0       PUBLIC        but1
+  -------         PROC          MY_DELAY
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0006H         SYMBOL        j
+  -------         ENDDO         
+  C:08C2H         LINE#         6
+  C:08C2H         LINE#         7
+  C:08C2H         LINE#         9
+  C:08C5H         LINE#         10
+  C:08C8H         LINE#         11
+  C:08D3H         LINE#         12
+  C:08DEH         LINE#         13
+  -------         ENDPROC       MY_DELAY
+  -------         PROC          MAIN
+  C:088CH         LINE#         14
+  C:088CH         LINE#         15
+  C:088FH         LINE#         16
+  C:088FH         LINE#         17
+  C:0892H         LINE#         19
+  C:089FH         LINE#         20
+  C:08A4H         LINE#         21
+  C:08A7H         LINE#         22
+  C:08A7H         LINE#         23
+  C:08AFH         LINE#         24
+  C:08B5H         LINE#         25
+  C:08BBH         LINE#         26
+  C:08C0H         LINE#         27
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        BUTTONLEDPATTERN_V2
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0057H BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=11.0 xdata=0 code=231
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

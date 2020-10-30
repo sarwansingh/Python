@@ -1,0 +1,56 @@
+C51 COMPILER V8.08   BUTTONLEDPATTERN                                                      01/29/2020 11:19:49 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE BUTTONLEDPATTERN
+OBJECT MODULE PLACED IN buttonLEDpattern.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE buttonLEDpattern.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1           #include<reg51.h>
+   2          sbit but1 = P2^0;
+   3          sbit but2 = P2^1;
+   4          sbit but3 = P2^2;
+   5          void my_delay()
+   6          {       int i,j;
+   7   1       
+   8   1              for (j=0;j<3 ;j++){
+   9   2                      for (i=0 ; i<30000 ;i++){
+  10   3                      }
+  11   2              }
+  12   1      }       
+  13          void main()
+  14          {       P1=0x00;
+  15   1              while(1){
+  16   2               if (but1==0){
+  17   3                // if button on P2.0 pin is pressed display pattern1
+  18   3                      P1=0xf0; my_delay();
+  19   3                      P1=0x0f; my_delay();
+  20   3                }
+  21   2                if (but2==0){
+  22   3                // if button on P2.1 pin is pressed display pattern2
+  23   3                      P1=0x00; my_delay();
+  24   3                      P1=0xff; my_delay();
+  25   3                }
+  26   2                if (but3==0){
+  27   3                // pattern3
+  28   3                      P1=0xaa; my_delay();
+  29   3                      P1=0x55; my_delay();
+  30   3                }
+  31   2                else { P1=0x00; } // make all LEDs off 
+  32   2              }
+  33   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     84    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
