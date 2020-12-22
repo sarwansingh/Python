@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Signup Form</title>
+  
+    <style type="text/css">
+    	form > input{
+    		margin: 10px;
+    	}
+    </style>
+
+</head>
+
+<body>
+
+ 		<div class="body"></div>
+ 		<center style="height: 70%;">
+		<div class="bo">
+			<div class="grad"></div>
+			<div class="header">
+				<div style="width: auto;">AIGEEKS</div>
+			</div>
+			<br>
+			<div class="login">
+				<form action="/signin/" method="post">
+					<input type="email" placeholder="email" name="email"><br>
+					<input type="password" placeholder="password" name="password"><br>
+					<input type="submit" value="Login">
+				</form>
+				<a href="{{url_for('signup')}}">Signup</a>
+			</div>
+		</div>
+		</center>
+  
+  
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Heart Disease Prediction </title>
+</head> 
+<body>
+	 
+   <h2>Heart Disease Prediction</h2>
+	<h3>Predict the probability of Cardio-Vascular Disease </h3>
+            
+    <form action='/predict' method="post">
+      <table>
+		<tr><td> Age
+			<td>  <input type=number name="age"  placeholder="Age (in years) " >
+        </tr>
+        <tr><td> Gender 
+            <td>  <input  name="gender" type=radio   value=1> Male <input  name="gender" type=radio   value=2> Female
+		</tr>
+		<tr><td> Height
+			<td>  <input type=number name="height"  placeholder="Height (in cms) " >
+        </tr>
+		<tr><td> Weight
+			<td>  <input type=number name="weight"  placeholder="Weight (in Kgs) " >
+        </tr>
+		<tr><td> BP (High)
+			<td>  <input  type=number name="ap_hi"  placeholder="BP (High) " >
+        </tr>
+		<tr><td> BP (Low)
+			<td>  <input  type=number name="ap_lo"  placeholder="BP (Low) " >
+        </tr>
+		<tr><td> Smoker 
+            <td>  <input  name="smoker" type=radio   value=1> Yes <input  name="smoker" type=radio   value=0> No
+		</tr>
+		<tr><td> Alcoholic  
+            <td>  <input  name="alcohol" type=radio   value=1> Yes <input  name="alcohol" type=radio   value=0> No		</tr>
+		<tr><td> Exercise Daily 
+            <td>  <input  name="active" type=radio   value=1> Yes <input  name="active" type=radio   value=0> No
+		</tr><tr><td> Heart Rate 
+ 
+            <td>   <select name = "heartrate">
+					<option value =1> 85-145 
+					<option value =2>  90-155 
+					<option value =3>  80-140 
+					<option value =4>  95-165 
+					<option value =5> 100-170 
+				</select>
+		</tr>
+		
+        <tr>
+		<td colspan=2 align=center><br><button type="submit">Predict Probability</button>
+		</tr>
+	  </table>
+    </form>
+       
+     <br> {{pred}}<br>  
+
+  </body>
+</html>
+

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Student Data</h1>
+<table class="table">
+	<thead>
+	<tr> <td>Rollno 
+		<td>Name <td>Address
+		<td>	 
+	</tr>	</thead>
+	{% for row in record %}
+		<tr> <td>{{row.rollno}}
+			 <td>{{row.name}}
+			 <td>{{row.address}}
+			 <td><button type="button" class="btn btn-outline-primary"> 
+				<a href="\delete\{{row.rollno}}"> delete </a>
+				</button>
+		</tr>
+	{% endfor %}
+</table>
+{% endblock content %}

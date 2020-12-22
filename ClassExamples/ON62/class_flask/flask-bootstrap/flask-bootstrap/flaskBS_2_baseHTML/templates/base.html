@@ -1,0 +1,18 @@
+<html>
+
+<head>
+   
+  {% if title %}
+  <title>{{ title }} - Flask SQLite Bootstrap</title>
+  {% else %}
+  <title>Welcome to Flask SQLite Bootstrap</title>
+  {% endif %}
+   
+</head>
+
+<body>
+  {% block content %}  
+  
+  {% endblock %}
+</body>
+</html>
