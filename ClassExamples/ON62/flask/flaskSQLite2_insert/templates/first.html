@@ -1,0 +1,59 @@
+<html>
+<body>
+<h1> CRUD - SQLite  </h1>
+
+Data received from Python 
+<br>
+   
+<table border =1>
+{% for row in all_data %}
+	<tr>
+		<td>{{row.id}}</td>     
+		<td>{{row.name}}</td>
+		<td>{{row.email}}</td>
+		<td>{{row.phone}}</td>
+	</tr>
+{% endfor %}
+</table>
+ 
+ 
+<hr>
+
+<!-- Model for adding employee -->
+            <div id="mymodal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title"> Add Employee </h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="{{url_for('insert')}}" method="POST">
+
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="name" required="1">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="email" required="1">
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Phone</label>
+                                    <input type="number" class="form-control" name="phone" required="1">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" type="submit"> Add Employee </button>
+                                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+</body>
+</html>

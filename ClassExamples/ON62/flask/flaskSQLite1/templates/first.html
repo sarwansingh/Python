@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1> CRUD - SQLite  </h1>
+
+Data received from Python 
+<br>
+   
+<table border =1>
+{% for row in all_data %}
+	<tr>
+		<td>{{row.id}}</td>     
+		<td>{{row.name}}</td>
+		<td>{{row.email}}</td>
+		<td>{{row.phone}}</td>
+	</tr>
+{% endfor %}
+</table>
+ 
+</body>
+</html>
