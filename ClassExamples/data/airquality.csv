@@ -1,0 +1,23 @@
+stn_code,sampling_date,state,location,agency,type,so2,no2,rspm,spm,location_monitoring_station,pm2_5,date
+150,February - M021990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,4.8,17.4,NA,NA,NA,NA,1990-02-01
+151,February - M021990,Andhra Pradesh,Hyderabad,NA,Industrial Area,3.1,7,NA,NA,NA,NA,1990-02-01
+152,February - M021990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,6.2,28.5,NA,NA,NA,NA,1990-02-01
+150,March - M031990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,6.3,14.7,NA,NA,NA,NA,1990-03-01
+151,March - M031990,Andhra Pradesh,Hyderabad,NA,Industrial Area,4.7,7.5,NA,NA,NA,NA,1990-03-01
+152,March - M031990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,6.4,25.7,NA,NA,NA,NA,1990-03-01
+150,April - M041990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,5.4,17.1,NA,NA,NA,NA,1990-04-01
+151,April - M041990,Andhra Pradesh,Hyderabad,NA,Industrial Area,4.7,8.7,NA,NA,NA,NA,1990-04-01
+152,April - M041990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,4.2,23,NA,NA,NA,NA,1990-04-01
+151,May - M051990,Andhra Pradesh,Hyderabad,NA,Industrial Area,4,8.9,NA,NA,NA,NA,1990-05-01
+152,May - M051990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,3.6,18.6,NA,NA,NA,NA,1990-05-01
+150,June - M061990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,3.9,14.1,NA,133,NA,NA,1990-06-01
+151,June - M061990,Andhra Pradesh,Hyderabad,NA,Industrial Area,5.6,11.8,NA,82,NA,NA,1990-06-01
+152,June - M061990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,3.3,19.3,NA,111,NA,NA,1990-06-01
+150,July - M071990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,3.9,8.2,NA,118,NA,NA,1990-07-01
+152,July - M071990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,3.5,12.1,NA,135,NA,NA,1990-07-01
+151,July - M071990,Andhra Pradesh,Hyderabad,NA,Industrial Area,7.9,10.2,NA,80,NA,NA,1990-07-01
+150,August - M081990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,4,9.9,NA,179,NA,NA,1990-08-01
+151,August - M081990,Andhra Pradesh,Hyderabad,NA,Industrial Area,12.4,11.5,NA,58,NA,NA,1990-08-01
+152,August - M081990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,4,12.3,NA,99,NA,NA,1990-08-01
+150,September - M091990,Andhra Pradesh,Hyderabad,NA, Residential, Rural and other Areas ,6.3,11.5,NA,270,NA,NA,1990-09-01
+151,September - M091990,Andhra Pradesh,Hyderabad,NA,Industrial Area,44.8,13.7,NA,97,NA,NA,1990-09-01
