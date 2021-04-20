@@ -1,0 +1,20 @@
+<html>
+<head> <title>List</title> </head>
+<body>
+<h3>student Information</h3>
+ 
+<table border=5>
+<thead> <td>ID</td> <td>Name</td> <td>Email</td> <td>Address</td>
+</thead>
+{% for i in rows %}
+<tr>
+	<td> {{i["id"]}} 
+	<td> {{i[1]}} 
+	<td> {{i["email"]}}
+	<td> {{i["address"]}} 
+</tr>
+{% endfor %}
+</tr>
+</table>
+<br><br> <a href="/">Go back to home page</a> </body>
+</html>

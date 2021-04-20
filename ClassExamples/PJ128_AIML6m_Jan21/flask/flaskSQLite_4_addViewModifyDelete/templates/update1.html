@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>delete record</title>
+</head>
+<body>
+<h3>Update record</h3>
+
+<form action = "/updaterecord" method="post">
+<table>
+{% for row in rows %}
+<tr><td>Name</td><td>
+  <input type="text" name="name" value="{{row["name"]}}" ></td></tr>
+<tr><td>Email</td><td>
+   <input type="email" name="email" value="{{row["email"]}}"></td></tr>
+<tr><td>Address</td><td>
+	<input type="text" name="address" value="{{row["address"]}}"></td></tr>
+<tr><td><input type="submit" value="Submit"></td></tr>
+<input type=hidden name=id value={{row["id"]}}>
+{% endfor %}
+</table>
+</form>
+ 
+<br><br> <a href="/">Go back to home page</a> </body>
+
+</body>
+</html>

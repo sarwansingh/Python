@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>delete record</title>
+</head>
+<body>
+<h3>Select student to modify record</h3>
+<form action="/modifyrecord" method="post">
+Select Student Name
+
+<select name="id"  >
+{% for row in rows %}
+  <option value={{row["id"]}}>{{row["name"]}}</option>
+{% endfor %}
+</select>
+
+<input type="submit" value="Submit">
+</form>
+<br><br> <a href="/">Go back to home page</a> </body>
+
+</body>
+</html>
