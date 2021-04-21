@@ -26,7 +26,7 @@ def update1():
 	con = sqlite3.connect("employee.db")
 	con.row_factory = sqlite3.Row
 	cur = con.cursor()
-	cur.execute("select *  from students where id=?",id  )
+	cur.execute("select *  from students where id=?",(id,)  )
 	rows = cur.fetchall()
 	return render_template("update1.html",rows = rows)
 
@@ -101,7 +101,7 @@ def deleterecord():
 	with sqlite3.connect("employee.db") as con:
 		try:
 			cur = con.cursor()
-			cur.execute("delete from students where id = ?",id)
+			cur.execute("delete from students where id = ?",(id,))
 			msg = "record successfully deleted"
 		except:
 			msg = "can't be deleted"
