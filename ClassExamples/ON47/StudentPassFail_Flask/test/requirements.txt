@@ -7,7 +7,7 @@ Keras==2.4.3
 Keras-Preprocessing==1.0.5
 MarkupSafe==1.1.1
 numpy==1.16.6
-PyYAML==5.3.1
+PyYAML==5.4
 scipy==1.2.3
 six==1.15.0
 Werkzeug==1.0.1
