@@ -10,5 +10,5 @@ numpy==1.16.6
 PyYAML==5.3.1
 scipy==1.2.3
 six==1.15.0
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 xgboost==0.82
